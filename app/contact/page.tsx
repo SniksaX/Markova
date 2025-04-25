@@ -33,17 +33,13 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
-    // Reset form after submission
     setFormData({ name: "", email: "", subject: "", message: "" });
-    // Show success message
     alert("Thank you for your message! We'll get back to you soon.");
   };
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Page Title */}
       <section className="py-16 bg-gradient-to-br from-black to-gray-900">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4 text-purple-500">
@@ -55,11 +51,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form and Information */}
       <section className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
             <div className="bg-gray-900 p-8 rounded-lg border border-purple-900/20">
               <h2 className="text-2xl font-bold mb-6 text-purple-400">
                 Send Us a Message
@@ -139,7 +133,6 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Contact Information */}
             <div className="space-y-8">
               <div className="bg-gray-900 p-8 rounded-lg border border-purple-900/20">
                 <h2 className="text-2xl font-bold mb-6 text-purple-400">
@@ -174,7 +167,6 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Social Media Links */}
               <div className="bg-gray-900 p-8 rounded-lg border border-purple-900/20">
                 <h2 className="text-2xl font-bold mb-6 text-purple-400">
                   Connect With Us
